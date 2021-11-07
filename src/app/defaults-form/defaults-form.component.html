@@ -1,0 +1,31 @@
+<mat-toolbar color="accent" >
+  <mat-toolbar-row>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-label> Defaults</mat-label>
+    <div class="flex-stretch"></div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button (click)="back()" mat-button mat-stroked-button>Back</button>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button (click)="save()" mat-button mat-stroked-button>Save</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<form fxLayout="column" [formGroup]="form">
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field color="warn"  appearance="outline">
+          <mat-label>ScreenCostPerColor</mat-label>
+          <input matInput name="screenCostPerColor" formControlName="screenCostPerColor" placeholder="ScreenCostPerColor"/>
+        </mat-form-field>
+      </div>
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field color="warn"  appearance="outline">
+          <mat-label>FilmPerColor</mat-label>
+          <input matInput name="filmPerColor" formControlName="filmPerColor" placeholder="FilmPerColor"/>
+        </mat-form-field>
+      </div>
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field color="warn"  appearance="outline">
+          <mat-label>ArtCostPerSide</mat-label>
+          <input matInput name="artCostPerSide" formControlName="artCostPerSide" placeholder="ArtCostPerSide"/>
+        </mat-form-field>
+      </div>
+</form>

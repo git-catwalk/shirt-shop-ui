@@ -1,0 +1,31 @@
+<mat-toolbar color="accent" >
+  <mat-toolbar-row>
+    <mat-divider [vertical]="true"></mat-divider>
+    <mat-label> Garment</mat-label>
+    <div class="flex-stretch"></div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button (click)="back()" mat-button mat-stroked-button>Back</button>
+    <mat-divider [vertical]="true"></mat-divider>
+    <button (click)="save()" mat-button mat-stroked-button>Save</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<form fxLayout="column" [formGroup]="form">
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field color="warn"  appearance="outline">
+          <mat-label>Brand</mat-label>
+          <input matInput name="brand" formControlName="brand" placeholder="Brand"/>
+        </mat-form-field>
+      </div>
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field color="warn"  appearance="outline">
+          <mat-label>Cost</mat-label>
+          <input matInput name="cost" formControlName="cost" placeholder="Cost"/>
+        </mat-form-field>
+      </div>
+      <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+        <mat-form-field color="warn"  appearance="outline">
+          <mat-label>CostDate</mat-label>
+          <input matInput name="costDate" formControlName="costDate" placeholder="CostDate"/>
+        </mat-form-field>
+      </div>
+</form>
